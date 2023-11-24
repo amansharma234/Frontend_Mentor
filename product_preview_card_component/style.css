@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+p{
+    color: hsl(228, 12%, 48%);
+    font-size: 13px;
+}
+.card-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: hsl(0, 0%, 100%);
+    margin: 9rem;
+    width: 42%;
+    height: 59vh;
+    border-radius: 10px;
+    display: flex;
+}
+
+.card-img{
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card-content{
+    margin: 1.7rem;
+    width: 80%;
+}
+
+.sub-title{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title{
+    font-family: 'Fraunces', serif;
+    margin-top: 0.8rem;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 35px;
+    width: 100%;
+}
+
+.desc{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 15px;
+    width: 100%;
+}
+
+.prices{
+    display: flex;
+    margin-top: 1.5rem;
+}
+.actual-price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+}
+
+.price{
+    margin:1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+}
+
+button{
+    background: hsl(158, 36%, 37%);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    height: 6vh;
+    padding: 1rem;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+button img{
+    margin-right: 0.5rem;
+}
+
+button:active{
+    background-color: hsl(157, 40%, 16%)
+}
+@media (min-width: 320px) and (max-width: 480px){
+
+    .card{
+        width: 90%;
+        margin: 1rem;
+        height: 87vh;
+        margin-top: 1.5rem;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .card-img{
+        background-image: url(./images/image-product-mobile.jpg);
+        background-size: contain;
+        height: 31.4vh;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .card-content{
+        margin: 1rem 1.5rem 1rem 1.5rem;
+    }
+
+    .title{
+    font-size: 30px;
+    }
+
+    .desc{
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5rem;
+        width: 110%;
+        margin-top: 1rem;
+        text-align: left;
+        font-size: 14px;
+    }
+    .prices{
+        margin-top: 1.7rem;
+    }
+
+    button{
+        height: 7vh;
+        width: 110%;
+    }
+
+
+
+}
+
+/* @media (min-width: 320px) and (max-width: 480px){
+
+    .card{
+        background: hsl(0, 0%, 100%);
+        margin: 1rem;
+        height: 92vh;
+        margin-top: 1.5rem;
+        border-radius: 10px;
+    }
+    
+    .card-img{
+        background-image: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+        height: 40vh;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .card-content{
+        margin: 1rem 1.5rem 1rem 1.5rem;
+    }
+    
+    
+    .desc{
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5rem;
+        width: 100%;
+        margin-top: 1rem;
+        text-align: left;
+        font-size: 14px;
+        width: 93%;
+    }
+    
+    
+    .prices{
+        display: flex;
+        margin-top: 1.5rem;
+    }
+    
+    .actual-price{
+        font-family: 'Fraunces', serif;
+        color: hsl(158, 36%, 37%);
+    }
+    
+    .price{
+        margin:0.6rem 0rem 0rem 1rem;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: line-through;
+    }
+    
+    button{
+        background: hsl(158, 36%, 37%);
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 8px;
+        height: 7vh;
+        padding: 1rem;
+        width: 100%;
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+    
+    button img{
+        margin-right: 0.5rem;
+    }
+    
+    button:active{
+        background-color: hsl(157, 40%, 16%)
+    }
+  }
+    */
